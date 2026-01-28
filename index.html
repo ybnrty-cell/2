@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>電力ゆとり研究所 Satellite - Power Comfort Simulator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700;900&family=Inter:wght@400;600&display=swap"
+        rel="stylesheet">
+    <style>
+        :root {
+            --primary: #6366f1;
+            --secondary: #ec4899;
+            --bg: #0f172a;
+            --text: #f8fafc;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Outfit', 'Inter', sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            text-align: center;
+            padding: 2rem;
+            background-image:
+                radial-gradient(at 0% 0%, rgba(99, 102, 241, 0.15) 0px, transparent 50%),
+                radial-gradient(at 100% 100%, rgba(236, 72, 153, 0.15) 0px, transparent 50%);
+        }
+
+        .container {
+            max-width: 800px;
+        }
+
+        h1 {
+            font-size: 3rem;
+            font-weight: 900;
+            background: linear-gradient(to right, var(--primary), var(--secondary));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 1rem;
+        }
+
+        p {
+            font-size: 1.25rem;
+            opacity: 0.8;
+            line-height: 1.6;
+            margin-bottom: 2rem;
+        }
+
+        .cta-btn {
+            display: inline-block;
+            background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+            color: white;
+            text-decoration: none;
+            padding: 1.2rem 2.5rem;
+            border-radius: 50px;
+            font-weight: 800;
+            font-size: 1.2rem;
+            box-shadow: 0 10px 30px rgba(99, 102, 241, 0.4);
+            transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+
+        .cta-btn:hover {
+            transform: scale(1.05);
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            margin-top: 4rem;
+        }
+
+        .feature-item {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 1.5rem;
+            border-radius: 12px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .feature-item h3 {
+            margin-top: 0;
+            color: var(--primary);
+        }
+
+        small {
+            margin-top: 2rem;
+            opacity: 0.4;
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>電力ゆとり研究所</h1>
+        <p>AI・EV時代を生き抜くための「電力レジリエンス」を可視化する。<br>気象データと住環境リスクを統合した、2026年最新のシミュレーター。</p>
+
+        <a href="https://denryoku-yutori.net" class="cta-btn">本家サイトで診断を開始 ↗</a>
+
+        <div class="features">
+            <div class="feature-item">
+                <h3>⚡ 高精度診断</h3>
+                <p style="font-size: 0.9rem;">AMeDASと電力需給データを統合したリアルタイム計算。</p>
+            </div>
+            <div class="feature-item">
+                <h3>🛡️ 権威階層</h3>
+                <p style="font-size: 0.9rem;">NASAや公的機関データに基づく高信頼の算出ロジック。</p>
+            </div>
+            <div class="feature-item">
+                <h3>📖 生存戦略</h3>
+                <p style="font-size: 0.9rem;">タワマン停電から極寒対策まで、20以上の実践ガイド。</p>
+            </div>
+        </div>
+
+        <small>&copy; 2026 Power Comfort Institute. Original: https://denryoku-yutori.net</small>
+    </div>
+</body>
+
+</html>
